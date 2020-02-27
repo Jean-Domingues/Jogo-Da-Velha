@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da velha</title>
+    <link rel="stylesheet" href="syle.css">
+</head>
+
+<body>
+    <div id="modal">
+        <div id="conteudo-modal">
+            <span id="modal-button" onclick="meuJogo.fechaModal()">&times;</span>
+            <p id="msg-end">Jogador 1 venceu</p>
+        </div>
+    </div>
+
+    <main>
+        <section id="placar">
+            <div id="jogador1">
+                <h2>PLAYER 1 (X)</h2>
+                <p id="player1">0</p>
+            </div>
+            <div id="jogador2">
+                <h2>PLAYER 2 (O)</h2>
+                <p id="player2">0</p>
+            </div>
+        </section>
+        <section id="container">
+            <div onclick="meuJogo.clickBox(1)" class="border-right border-bottom">
+
+            </div>
+            <div onclick="meuJogo.clickBox(2)" class="border-right border-bottom">
+
+            </div>
+            <div onclick="meuJogo.clickBox(3)" class="border-bottom">
+
+            </div>
+            <div onclick="meuJogo.clickBox(4)" class="border-right border-bottom">
+
+            </div>
+            <div onclick="meuJogo.clickBox(5)" class="border-right border-bottom">
+
+            </div>
+            <div onclick="meuJogo.clickBox(6)" class="border-bottom">
+
+            </div>
+            <div onclick="meuJogo.clickBox(7)" class="border-right">
+
+            </div>
+            <div onclick="meuJogo.clickBox(8)" class="border-right">
+
+            </div>
+            <div onclick="meuJogo.clickBox(9)">
+
+            </div>
+        </section>
+     
+            <button onclick="meuJogo.zeraPlacar()">
+                Restart
+            </button>
+      
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
